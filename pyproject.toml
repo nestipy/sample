@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nestipy-sample"
+version = "0.1.0"
+description = ""
+authors = ["tsiresymila <tsiresymila@gmail.com>"]
+packages = [{ include = "nestipy-sample", from = "src" }]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+nestipy-cli = {path = "../nestipy-cli", develop = true}
+nestipy = {path = "../nestipy", develop = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
