@@ -1,6 +1,7 @@
+from nestipy_decorator import Controller, Get, Post, Put, Delete
+from nestipy_ioc import Inject
+
 from app_service import AppService
-from nestipy.common import Controller, Get, Post, Put, Delete
-from nestipy.types_ import Inject
 
 
 @Controller()

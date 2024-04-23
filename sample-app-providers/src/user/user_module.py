@@ -1,13 +1,23 @@
-from nestipy.common import Module
+from nestipy_decorator import Module
+from nestipy_ioc import ModuleProviderDict
 
-from .user_service import UserService
 from .user_controller import UserController
+from .user_service import UserService
 
 
 @Module(
-    providers=[UserService],
+    providers=[
+        UserService,
+        ModuleProviderDict(
+            token='TEST',
+            value='Test value'
+        )
+    ],
     controllers=[UserController],
-    exports=[UserService]
+    exports=[
+        UserService,
+        'TEST'
+    ]
 )
 class UserModule:
     ...

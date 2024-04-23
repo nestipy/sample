@@ -1,6 +1,6 @@
-from nestipy.common import Controller, Post
 from nestipy.openapi.decorator import ApiTags, ApiOkResponse, ApiNotFoundResponse, ApiBody
-from nestipy.types_ import Inject, Body
+from nestipy_decorator import Controller, Post
+from nestipy_ioc import Inject, Body
 
 from .auth_dto import LoginDto, RegisterDto
 from .auth_service import AuthService

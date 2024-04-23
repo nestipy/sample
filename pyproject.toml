@@ -8,10 +8,13 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pyjwt = "^2.8.0"
+nestipy-dynamic-module = "^0.1.1"
 
 
 [tool.poetry.group.dev.dependencies]
 nestipy-cli = {path = "../nestipy-cli", develop = true}
+nestipy-ioc = {path = "../nestipy-ioc", develop = true}
 nestipy = {path = "../nestipy", develop = true}
 
 [build-system]

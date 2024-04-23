@@ -1,17 +1,18 @@
-from nestipy.common import Injectable
-from nestipy.types_ import Inject
+from nestipy_decorator import Injectable
+from nestipy_ioc import Inject
 
-from ..user.user_service import UserService
-from  ..user.user_dto import CreateUserDto
 from .auth_dto import LoginDto, RegisterDto
+from ..user.user_service import UserService
 
 
 @Injectable()
 class AuthService:
     user_service: Inject[UserService]
+    test: Inject["TEST"]
 
     async def login(self, data: LoginDto):
         await self.user_service.get(data.password)
+        print(self.test)
         return data
 
     async def register(self, data: RegisterDto):
