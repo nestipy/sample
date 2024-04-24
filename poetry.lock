@@ -1080,35 +1080,33 @@ nestipy-metadata = ">=0.1.0,<0.2.0"
 
 [[package]]
 name = "nestipy-dynamic-module"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.10"
 files = [
-    {file = "nestipy_dynamic_module-0.1.1-py3-none-any.whl", hash = "sha256:bc41dc897654d80327649585796c223f17983233e757a6e68d20cea437caf646"},
-    {file = "nestipy_dynamic_module-0.1.1.tar.gz", hash = "sha256:843b6588747b87607c222fb758569230bebb3120183110565741ac7503f3e678"},
+    {file = "nestipy_dynamic_module-0.1.2-py3-none-any.whl", hash = "sha256:2b0aa9bc09e51d81cd11e5c027ed247815289c6197e015260e5463a918e25711"},
+    {file = "nestipy_dynamic_module-0.1.2.tar.gz", hash = "sha256:56e3c06235bf78139ee003216a08913b24a8ce2a27245ee1fd6120c64e319146"},
 ]
 
 [package.dependencies]
-nestipy-ioc = ">=0.1.0,<0.2.0"
+nestipy-ioc = ">=0.1.23,<0.2.0"
 nestipy-metadata = ">=0.1.0,<0.2.0"
 
 [[package]]
 name = "nestipy-ioc"
-version = "0.1.10"
+version = "0.1.30"
 description = ""
 optional = false
-python-versions = "^3.10"
-files = []
-develop = true
+python-versions = "<4.0,>=3.10"
+files = [
+    {file = "nestipy_ioc-0.1.30-py3-none-any.whl", hash = "sha256:8a2414f61a4bfc043b0d0f12bc4afe00486f6dc49456321dcdbe6a4db19ba278"},
+    {file = "nestipy_ioc-0.1.30.tar.gz", hash = "sha256:8d0dcdf46fbb1d0a7fd65bdd52dc1829fb0c323b5badb638bf3b81697d4d774e"},
+]
 
 [package.dependencies]
-nestipy-metadata = "^0.1.0"
-pydantic = "^2.7.0"
-
-[package.source]
-type = "directory"
-url = "../nestipy-ioc"
+nestipy-metadata = ">=0.1.0,<0.2.0"
+pydantic = ">=2.7.0,<3.0.0"
 
 [[package]]
 name = "nestipy-metadata"
@@ -2200,4 +2198,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "c18680ea0bfabc8b6af4c28b75927363293857c5e0b91c370365fc5fade298b8"
+content-hash = "c57db3281089da89cbdfe05977eeda1900965b6558f0e57cd3bf9a1f06fbcc37"

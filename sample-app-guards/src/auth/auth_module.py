@@ -1,4 +1,4 @@
-from nestipy_decorator import Module
+from nestipy.common import Module
 
 from .auth_controller import AuthController
 from .auth_service import AuthService

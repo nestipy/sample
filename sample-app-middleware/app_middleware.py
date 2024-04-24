@@ -1,7 +1,7 @@
+from nestipy.common import Injectable
+from nestipy.common import NestipyMiddleware
 from nestipy.common import Request, Response
-from nestipy.common.middleware import NestipyMiddleware
 from nestipy.types_ import NextFn
-from nestipy_decorator import Injectable
 from nestipy_ioc import Inject
 
 from app_service import AppService

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from nestipy.common.http_.upload_file import UploadFile
+from nestipy.common import UploadFile
 
 
 @dataclass

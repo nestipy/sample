@@ -1,5 +1,5 @@
 from nestipy.openapi.decorator import ApiTags, ApiOkResponse, ApiNotFoundResponse, ApiBody
-from nestipy_decorator import Controller, Get, Post, Put, Delete
+from nestipy.common import Controller, Get, Post, Put, Delete
 from nestipy_ioc import Inject, Body, Params
 
 from .user_dto import CreateUserDto, UpdateUserDto

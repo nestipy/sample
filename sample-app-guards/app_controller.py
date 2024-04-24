@@ -1,5 +1,5 @@
 from nestipy_ioc import Inject, Body, Params
-from nestipy_decorator import Controller, Get, Post, Put, Delete
+from nestipy.common import Controller, Get, Post, Put, Delete
 
 from app_service import AppService
 

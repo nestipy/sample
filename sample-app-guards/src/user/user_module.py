@@ -1,4 +1,4 @@
-from nestipy_decorator import Module
+from nestipy.common import Module
 
 from .user_controller import UserController
 from .user_service import UserService

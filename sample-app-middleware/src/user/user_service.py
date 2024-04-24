@@ -1,4 +1,4 @@
-from nestipy_decorator import Injectable
+from nestipy.common import Injectable
 
 from .user_dto import CreateUserDto, UpdateUserDto
 

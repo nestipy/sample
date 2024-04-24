@@ -1,5 +1,5 @@
 import uvicorn
-from nestipy.core.nestipy_factory import NestipyFactory
+from nestipy.core import NestipyFactory
 from nestipy.openapi import DocumentBuilder, SwaggerModule
 
 from app_module import AppModule

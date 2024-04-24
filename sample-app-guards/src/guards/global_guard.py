@@ -1,15 +1,16 @@
 from typing import Union, Awaitable
 
 from nestipy.common import CanActivate
-from nestipy.core.context.execution_context import ExecutionContext
-from nestipy_cli.templates.project.app_service import AppService
-from nestipy_decorator import Injectable
+from nestipy.common import Injectable
+from nestipy.core import ExecutionContext
 from nestipy_ioc import Inject
+
+from ..auth.auth_service import AuthService
 
 
 @Injectable()
 class GlobalGuard(CanActivate):
-    app_service: Inject[AppService]
+    auth_service: Inject[AuthService]
 
     async def can_activate(self, context: ExecutionContext) -> Union[Awaitable[bool], bool]:
         return True

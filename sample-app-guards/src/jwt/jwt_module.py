@@ -1,4 +1,4 @@
-from nestipy_decorator import Module
+from nestipy.common import Module
 
 from .builder import ConfigurableModuleClass, JwtOption
 from .jwt_service import JwtService

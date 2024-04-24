@@ -1,4 +1,4 @@
-from nestipy_decorator import Injectable
+from nestipy.common import Injectable
 from nestipy_ioc import Inject
 
 from .auth_dto import LoginDto, RegisterDto

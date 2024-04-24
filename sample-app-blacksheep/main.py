@@ -1,6 +1,6 @@
 import uvicorn
-from nestipy.core.nestipy_factory import NestipyFactory
-from nestipy.core.platform import NestipyBlackSheepApplication
+from nestipy.core import NestipyBlackSheepApplication
+from nestipy.core import NestipyFactory
 
 from app_module import AppModule
 
