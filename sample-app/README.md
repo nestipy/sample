@@ -2,13 +2,11 @@
   <a href="http://nestipy.vercel.app" target="blank"><img src="https://raw.githubusercontent.com/nestipy/nestipy/release-v1/nestipy.png" width="320" alt="Nestipy Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<p align="center">A <a href="http://python.org" target="_blank">Python</a> ASGI framework for building modular, efficient and scalable server-side applications.</p>
 
-  <p align="center">A progressive <a href="http://python.org" target="_blank">Python</a> framework for building efficient and scalable server-side applications.</p>
 ## Description
 
-[Nestipy](https://github.com/tsiresymila/nestipy) 
+[Nestipy](https://github.com/tsiresymila/nestipy)
 
 ## Installation
 
@@ -25,13 +23,14 @@ $ python main.py
 
 ## Support
 
-Nestipy is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestipy.com/support).
+**Nestipy** operates under the MIT license, making it an open source initiative. Its expansion is made possible through
+the generous sponsorship and backing of remarkable supporters.
 
 ## Stay in touch
 
 - Author - [Tsiresy Mila](https://tsiresymila.vercel.app.com)
-- Website - [https://nestipy.com](https://nestipy.com/)
+- Website - [https://nestipy.vercel.app](https://nestipy.vercel.app)
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Nestipy is [MIT licensed](LICENSE).
