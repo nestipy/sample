@@ -6,7 +6,7 @@
 
 ## Description
 
-[Nestipy](https://github.com/tsiresymila/nestipy)
+[Nestipy](https://nestipy.vercel.app)
 
 ## Installation
 
