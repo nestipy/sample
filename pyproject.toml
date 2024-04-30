@@ -9,8 +9,6 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 pyjwt = "^2.8.0"
-nestipy-dynamic-module = "^0.1.2"
-python-dotenv = "^1.0.1"
 pyee = "^11.1.0"
 
 

@@ -1,5 +1,5 @@
 from nestipy.common import Injectable
-from nestipy_ioc import Inject
+from nestipy.ioc import Inject
 
 from .user_dto import CreateUserDto, UpdateUserDto
 from ..config.config_service import ConfigService

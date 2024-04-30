@@ -1,7 +1,7 @@
 from typing import AsyncIterator, Any
 
 from nestipy.graphql import Resolver, Query, Mutation, Subscription
-from nestipy_ioc import Inject, Args
+from nestipy.ioc import Inject, Args
 
 from .user_input import UserInput
 from .user_service import UserService

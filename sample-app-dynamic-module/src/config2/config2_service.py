@@ -2,7 +2,7 @@ import os
 
 from dotenv import dotenv_values
 from nestipy.common import Injectable
-from nestipy_ioc import Inject
+from nestipy.ioc import Inject
 
 from .builder import CONFIG2OPTION
 

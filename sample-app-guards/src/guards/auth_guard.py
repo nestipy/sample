@@ -4,7 +4,7 @@ from nestipy.common import CanActivate
 from nestipy.common import HttpStatus, HttpStatusMessages, HttpException
 from nestipy.common import Injectable
 from nestipy.core import ExecutionContext
-from nestipy_ioc import Inject
+from nestipy.ioc import Inject
 
 from ..jwt.jwt_service import JwtService
 from ..user.user_service import UserService

@@ -1,7 +1,7 @@
 from nestipy.common import UseGuards, Request
 from nestipy.openapi.decorator import ApiCreatedResponse, ApiOkResponse, ApiBearerAuth, ApiBody
 from nestipy.common import Controller, Get, Post, Put, Delete
-from nestipy_ioc import Inject, Body, Params, Req
+from nestipy.ioc import Inject, Body, Params, Req
 
 from .user_dto import CreateUserDto, UpdateUserDto
 from .user_service import UserService

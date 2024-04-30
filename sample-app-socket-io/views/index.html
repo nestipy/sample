@@ -9,11 +9,11 @@
 </head>
 <body>
 <div>
-    Nestipy SocketIO
+    Nestipy SocketIO Sample
 </div>
-<button type="button" onclick="sendMessage()">Send message</button>
-<button type="button" onclick="sendUser()">Send user</button>
-<script src="/static/js/socketio.min.js"></script>
+<button type="button" onclick="sendMessage()">Send event(message)</button>
+<button type="button" onclick="sendUser()">Send event(user)</button>
+<script src="/static/js/socket.io.min.js"></script>
 <script>
     const socket = io();
     socket.on("connection", (socket) => {

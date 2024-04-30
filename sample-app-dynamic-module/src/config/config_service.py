@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 from dotenv import dotenv_values
 from nestipy.common import Injectable
-from nestipy_ioc import Inject
+from nestipy.ioc import Inject
 
 
 @dataclass

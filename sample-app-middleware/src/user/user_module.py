@@ -1,6 +1,6 @@
 from nestipy.common import Module
 from nestipy.core import MiddlewareConsumer
-from nestipy_dynamic_module import NestipyModule
+from nestipy.dynamic_module import NestipyModule
 
 from .user_controller import UserController
 from .user_middleware import UserMiddleware, user_middleware

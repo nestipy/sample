@@ -1,5 +1,5 @@
 from nestipy.common import Injectable
-from nestipy_ioc import Inject
+from nestipy.ioc import Inject
 
 from src.config.config_service import ConfigService
 from src.config2.config2_service import Config2Service

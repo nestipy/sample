@@ -1,7 +1,7 @@
 from typing import Any
 
 from nestipy.websocket import IoAdapter, Gateway, SubscribeMessage
-from nestipy_ioc import SocketServer, SocketClient, SocketData
+from nestipy.ioc import SocketServer, SocketClient, SocketData
 
 
 @Gateway()

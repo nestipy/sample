@@ -1,5 +1,5 @@
 from nestipy.common import Module, ModuleProviderDict
-from nestipy_dynamic_module import DynamicModule
+from nestipy.dynamic_module import DynamicModule
 
 from .config_service import ConfigService, ConfigOption
 

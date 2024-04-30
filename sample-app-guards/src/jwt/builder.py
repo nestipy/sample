@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Union
 
-from nestipy_dynamic_module import ConfigurableModuleBuilder
+from nestipy.dynamic_module import ConfigurableModuleBuilder
 
 
 @dataclass

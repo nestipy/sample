@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from nestipy_dynamic_module import ConfigurableModuleBuilder
+from nestipy.dynamic_module import ConfigurableModuleBuilder
 
 
 @dataclass

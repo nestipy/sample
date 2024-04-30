@@ -1,6 +1,6 @@
 from nestipy.common import Controller, Get, Post, Put, Delete
 from nestipy.common import UseFilters, HttpException, HttpStatus, HttpStatusMessages
-from nestipy_ioc import Inject, Body, Params
+from nestipy.ioc import Inject, Body, Params
 
 from app_service import AppService
 from exception.badrequest_filter import BadRequestExceptionFilter, BadRequestException

@@ -1,6 +1,6 @@
 from nestipy.common import Module
 from nestipy.core import AppKey
-from nestipy_ioc import ModuleProviderDict
+from nestipy.ioc import ModuleProviderDict
 
 from app_controller import AppController
 from app_service import AppService
