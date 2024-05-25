@@ -560,7 +560,7 @@ files = [
 
 [[package]]
 name = "nestipy"
-version = "0.2.9"
+version = "0.3.3"
 description = "Nestipy is a Python framework built on top of BlackSheep that follows the modular architecture of NestJS"
 optional = false
 python-versions = "^3.10"

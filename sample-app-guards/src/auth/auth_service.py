@@ -1,3 +1,5 @@
+from typing import Annotated
+
 from nestipy.common import HttpException, HttpStatusMessages, HttpStatus
 from nestipy.common import Injectable
 from nestipy.ioc import Inject
@@ -9,8 +11,8 @@ from ..user.user_service import UserService
 
 @Injectable()
 class AuthService:
-    user_service: Inject[UserService]
-    jwt_service: Inject[JwtService]
+    user_service: Annotated[UserService, Inject()]
+    jwt_service: Annotated[JwtService, Inject()]
 
     async def login(self, data: LoginDto):
         user = await self.user_service.find_by_email(data.email)

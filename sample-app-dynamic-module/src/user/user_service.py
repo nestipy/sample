@@ -1,3 +1,5 @@
+from typing import Annotated
+
 from nestipy.common import Injectable
 from nestipy.ioc import Inject
 
@@ -8,8 +10,8 @@ from ..config2.config2_service import Config2Service
 
 @Injectable()
 class UserService:
-    config: Inject[ConfigService]
-    config2: Inject[Config2Service]
+    config: Annotated[ConfigService, Inject()]
+    config2: Annotated[Config2Service, Inject()]
 
     async def list(self):
         return "test"

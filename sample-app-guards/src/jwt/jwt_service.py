@@ -1,15 +1,15 @@
-from typing import Union
+from typing import Union, Annotated
 
 import jwt
 from nestipy.common import Injectable
 from nestipy.ioc import Inject
 
-from .builder import JWT_OPTION_TOKEN
+from .builder import JWT_OPTION_TOKEN, JwtOption
 
 
 @Injectable()
 class JwtService:
-    _options: Inject[JWT_OPTION_TOKEN]
+    _options: Annotated[JwtOption, Inject(JWT_OPTION_TOKEN)]
 
     async def decode(self, token: str):
         return jwt.decode(

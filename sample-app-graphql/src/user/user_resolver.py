@@ -1,7 +1,7 @@
-from typing import AsyncIterator, Any
+from typing import AsyncIterator, Any, Annotated
 
 from nestipy.graphql import Resolver, Query, Mutation, Subscription
-from nestipy.ioc import Inject, Args
+from nestipy.ioc import Inject, Arg
 
 from .user_input import UserInput
 from .user_service import UserService
@@ -10,8 +10,8 @@ from ..pubsub import PubSub
 
 @Resolver()
 class UserResolver:
-    user_service: Inject[UserService]
-    pub_sub: Inject[PubSub]
+    user_service: Annotated[UserService, Inject()]
+    pub_sub: Annotated[PubSub, Inject()]
 
     @Query()
     async def user_test_query(self) -> str:
@@ -19,7 +19,7 @@ class UserResolver:
         return await self.user_service.list()
 
     @Mutation()
-    async def user_test_mutation(self, data: Args[UserInput]) -> str:
+    async def user_test_mutation(self, data: Annotated[UserInput, Arg('data')]) -> str:
         self.pub_sub.publish('message', 'from mutation')
         return data.test
 

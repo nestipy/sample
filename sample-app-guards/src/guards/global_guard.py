@@ -1,4 +1,4 @@
-from typing import Union, Awaitable
+from typing import Union, Awaitable, Annotated
 
 from nestipy.common import CanActivate
 from nestipy.common import Injectable
@@ -10,7 +10,7 @@ from ..auth.auth_service import AuthService
 
 @Injectable()
 class GlobalGuard(CanActivate):
-    auth_service: Inject[AuthService]
+    auth_service: Annotated[AuthService, Inject()]
 
     async def can_activate(self, context: ExecutionContext) -> Union[Awaitable[bool], bool]:
         return True

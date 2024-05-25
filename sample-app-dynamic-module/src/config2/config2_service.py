@@ -1,15 +1,16 @@
 import os
+from typing import Annotated
 
 from dotenv import dotenv_values
 from nestipy.common import Injectable
 from nestipy.ioc import Inject
 
-from .builder import CONFIG2OPTION
+from .builder import CONFIG2OPTION, Config2Option
 
 
 @Injectable()
 class Config2Service:
-    options: Inject[CONFIG2OPTION]
+    options: Annotated[Config2Option, Inject(CONFIG2OPTION)]
     env: dict = []
 
     def __init__(self):

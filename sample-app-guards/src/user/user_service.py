@@ -1,6 +1,6 @@
 from nestipy.common import Injectable
 
-from .user_dto import CreateUserDto, UpdateUserDto
+from .user_dto import UpdateUserDto, CreateUserDto
 
 
 @Injectable()

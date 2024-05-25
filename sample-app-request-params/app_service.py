@@ -9,11 +9,11 @@ class AppService:
         return "test"
 
     @classmethod
-    async def post(cls, data: str):
+    async def post(cls, data: any):
         return "test"
 
     @classmethod
-    async def put(cls, id_: int, data: str):
+    async def put(cls, id_: int, data: any):
         return "test"
 
     @classmethod

@@ -1,4 +1,4 @@
-from typing import Union, Awaitable
+from typing import Union, Awaitable, Annotated
 
 from nestipy.common import CanActivate
 from nestipy.common import HttpStatus, HttpStatusMessages, HttpException
@@ -12,8 +12,8 @@ from ..user.user_service import UserService
 
 @Injectable()
 class AuthGuard(CanActivate):
-    user_service: Inject[UserService]
-    jwt_service: Inject[JwtService]
+    user_service: Annotated[UserService, Inject()]
+    jwt_service: Annotated[JwtService, Inject()]
 
     async def can_activate(self, context: ExecutionContext) -> Union[Awaitable[bool], bool]:
         req = context.switch_to_http().get_request()
