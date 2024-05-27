@@ -19,7 +19,7 @@ class UserResolver:
         return await self.user_service.list()
 
     @Mutation()
-    async def user_test_mutation(self, data: Annotated[UserInput, Arg('data')]) -> str:
+    async def user_test_mutation(self, data: Annotated[UserInput, Arg()]) -> str:
         self.pub_sub.publish('message', 'from mutation')
         return data.test
 
